@@ -16,7 +16,7 @@ def main():
     bmi = round((user_weight / (user_height ** 2)), 1)
     WATER_PER_LITER = 30  # мл воды на 1 кг веса
     CONVERT_ML_TO_L = 1000  # для перевода мл в л
-    water_in_ml = user_name * WATER_PER_LITER
+    water_in_ml = user_weight * WATER_PER_LITER
     water_needed = round((water_in_ml / CONVERT_ML_TO_L), 1)
 
     print('-' * 40)
