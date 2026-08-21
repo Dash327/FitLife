@@ -1,3 +1,7 @@
+WATER_PER_LITER = 30  # мл воды на 1 кг веса
+CONVERT_ML_TO_L = 1000  # для перевода мл в л
+
+
 def main():
     """Главная функция программы."""
     # Обернула всё в фунцию, так как падал 6 тест, подсказал гптшник,
@@ -14,8 +18,6 @@ def main():
     print('Отлично, приступаем к рассчётам!')
 
     bmi = round((user_weight / (user_height ** 2)), 1)
-    WATER_PER_LITER = 30  # мл воды на 1 кг веса
-    CONVERT_ML_TO_L = 1000  # для перевода мл в л
     water_in_ml = user_weight * WATER_PER_LITER
     water_needed = round((water_in_ml / CONVERT_ML_TO_L), 1)
 
